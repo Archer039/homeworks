@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+#task-form {
+    width: 80%;
+    margin: 20px 10%;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+#task {
+    display: block;
+    width: 200px;
+    height: 34px;
+    padding-left: 30px;
+    margin-top: 20px;
+    border: 3px solid silver;
+    border-radius: 5px;
+    color: rgb(116, 36, 36);
+}
+
+#task:focus {
+    border-color: rgb(116, 36, 36);
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    margin: 15px 15px 0 0;
+    border-radius: 5px;
+    border: 3px solid silver;
+    color: rgb(116, 36, 36);
+}
+
+
+.btn:hover {
+    background-color: brown;
+    color: white;
+    border-color: rgb(116, 36, 36);
+    cursor: pointer;
+}
+
+
+.hiden-message {
+    display: none;
+    width: 250px;
+    height: 50px;
+    margin-top: 15px;
+    padding-top: 20px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    background-color: #EFEFEF;
+    color: #7d7d7d;
+    text-align: center;
+    
+}
+
+ul {
+    width: 80%;
+    margin: 15px 10%;
+}
+
+li {
+    margin: 10px;
+    list-style: none;
+}
