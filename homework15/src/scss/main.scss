@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header, .footer{
+    background-color: white;
+}
+
+.logo {
+    width: 80px;
+    transition: transform 1s ease;
+    &:hover {
+        transform: rotate(360deg);
+    }
+}
+
+input:focus, button:focus {
+    outline-color: rgb(47, 205, 253);
+}
+
+button:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.fixed-article {
+    background-color: #9c2c2c;
+}
+
+
+.bg-info {
+    background-color: #35b1ca!important;
+}
+
+.footer {
+    height: 60px;
+}
+
