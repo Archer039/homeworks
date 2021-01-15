@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Создание веб сайта</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+  <header>
+    <div class="header container rounded-3 mt-4 shadow-sm">
+      <div class="row align-items-center">
+        <div class="col col-5 d-flex align-items-center">
+          <img class="logo rounded-circle" src="img/logo.jpg" alt="логотип">
+          <p class="m-0 fw-bold lh-1 fs-5">itProger <br><span class="text-danger">Blog</span></p>
+        </div>
+        <div class="col col-3">
+          <form>
+            <input class="border border-black-50 rounded" type="text" name="find" id="find" placeholder="  Поиск">
+          </form>
+        </div>
+        <div class="col col-4">
+          <nav class="d-flex justify-content-end">
+            <button class="rounded border border-black-50 me-1">Главная</button>
+            <button class="rounded border border-black-50  me-1">Статьи</button>
+            <button class="rounded border border-black-50 ">Контакты</button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="fixed-article container mt-4 rounded-1 text-white p-5">
+      <div class="row">
+        <div class="col">
+          <h2 class="h1 fw-light">3 основных сферы применения языка Python</h2>
+          <p>До начала активного изучения любого языка программирования правильно было бы задуматься о сферах его примененияю Мы расскажем про 3 самые популярные сферы применения языка Python.</p>
+          <button class="btn btn-danger">Читать дальше</button>
+        </div>
+        <div class="col">
+          <img class="border border-4 border-white rounded w-100" src="img/mozrust.png" alt="image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Статьи -->
+
+    <div class="articles container mt-4">
+      <div class="row">
+        <div class="news col col-8">
+          <h2>Новости</h2>
+          <div class="row mt-2">
+            <div class="col">
+              <div class="card">
+                <img src="img/articles pic/UnrealVSUnity.jpg" alt="" class="card-img-top img-fluid">
+                <div class="card-body">
+                  <h5 class="card-title">Сравнение движков Unreal Engine 4 против Unity 5</h5>
+                  <p class="card-text">Выбрать движок дело не простое, а особенно когда оба очень хороши. В статье мы проведем сравнение двух программ и выясним какой движок использовать именно Вам!</p>
+                  <a href="" class="btn btn-warning">Читать дальше</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/articles pic/porGirl.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">7 девушек айтишниц из фильмов и сериалов</h5>
+                  <p class="card-text">Много ли вы знаете фильмов и сериалов, где главные персонажи это девушки программисты? Мы подобрали 7 фильмов с такой концепцией.</p>
+                  <a href="" class="btn btn-warning">Читать дальше</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col">
+              <div class="card">
+                <img src="img/articles pic/devTools.png" alt="" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">11 полезных инструментов для веб-разработчика</h5>
+                  <p class="card-text">Разработчики постоянно пытаются сделать свою жизнь проще или расширить собственные возможности. Мы подготовили 11 инструментов, которые это обеспечат.</p>
+                  <a href="" class="btn btn-warning">Читать дальше</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/articles pic/deepLearning.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Что такое Deep Learning? Как работает глубокое обучение?</h5>
+                  <p class="card-text">Как работает глубокое обучение и что оно из себя представляет? В ходе статьи мы рассжадем про Deep Learning и разберемся с его ключевыми понятиями.</p>
+                  <a href="" class="btn btn-warning">Читать дальше</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Анонсы -->
+
+        <div class="announcements col col-4">
+          <h2>Анонсы</h2>
+          <div class="card mt-2">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit totam repellat, culpa sequi ea enim delectus dolor fugiat laudantium, minima vero ullam et? Explicabo, maxime in. Natus unde cum repudiandae.</p>
+            </div>
+          </div>
+          <div class="card mt-4 bg-info text-white">
+            <div class="card-body">
+              <img src="img/articles pic/android-processor.jpg" alt="" class="card-img-top border border-4 border-white rounded">
+              <p class="card-text mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, aliquid? Quae impedit numquam odio dolores id sint magnam incidunt voluptatibus perferendis nemo, vel eum dolorum at cupiditate mollitia corporis temporibus!</p>
+              <a href="" class="btn btn-light">Читать дальше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer container shadow mb-0 rounded border border-3 border-bottom-0 border-muted mt-5">
+      <p class="mb-0 mt-3 text-center fw-bold">Все права защищены &copy;</p>
+    </div>
+  </footer>
+</body>
+
+</html>
