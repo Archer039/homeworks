@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>homework10</title>
+</head>
+<body>
+    <div id="app">
+        <form action="" id="task-form">
+            <h1>Список дел</h1>
+            <label for="task">Добавьте в список новые значениея</label><br>
+            <input type="text" name="task" id="task" placeholder="Введите значение" v-model="newTask">
+            <input type="button" class="btn" id="add-task" v-on:click="addTask" value="Добавить">
+        </form>
+        <ul class="tasks-list">
+            <li v-for="(task, idTask) in tasks">{{ task | trimSpace}}<button class="btn"  v-on:click="removeTask(idTask)">Удалить</button></li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
