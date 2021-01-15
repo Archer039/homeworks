@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Создание веб сайта</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" crossorigin="anonymous">
+</head>
+
+<body class="bg-light">
+  <header>
+    <div class="header container rounded-3 mt-4 shadow-sm">
+      <div class="row align-items-center">
+        <div class="col col-5 d-flex align-items-center">
+          <img class="logo rounded-circle" src="img/logo.jpg" alt="логотип">
+          <p class="m-0 fw-bold lh-1 fs-5">itProger <br><span class="text-danger">Blog</span></p>
+        </div>
+        <div class="col col-3">
+          <form>
+            <input class="border border-black-50 rounded" type="text" name="find" id="find" placeholder="  Поиск">
+          </form>
+        </div>
+        <div class="col col-4">
+          <nav class="d-flex justify-content-end">
+            <button class="rounded border border-black-50 me-1">Главная</button>
+            <button class="rounded border border-black-50  me-1">Статьи</button>
+            <button class="rounded border border-black-50 ">Контакты</button>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="fixed-article container mt-4 rounded-1 text-white p-5">
+      <div class="row">
+        <div class="col">
+          <h2 class="h1 fw-light">3 основных сферы применения языка Python</h2>
+          <p>До начала активного изучения любого языка программирования правильно было бы задуматься о сферах его
+            примененияю Мы расскажем про 3 самые популярные сферы применения языка Python.</p>
+          <button class="btn btn-danger">Читать дальше</button>
+        </div>
+        <div class="col">
+          <img class="border border-4 border-white rounded w-100" src="img/mozrust.png" alt="image">
+        </div>
+      </div>
+    </div>
+
+    <!-- Статьи -->
+
+    <div class="articles container mt-4">
+      <div class="row">
+        <div id="news" class="news col col-8">
+          <h2>Новости</h2>
+          <div class="article-container d-flex justify-content-between align-items-start flex-wrap">
+            <div class="card m-2" v-for="article in articles">
+              <img src="article.imgSrc" alt="" class="card-img-top">
+              <div class="card-body">
+                <h5 class="card-title">{{ article.title }}</h5>
+                <p class="card-text">{{ article.text }}</p><a href="" class="btn btn-warning">Читать дальше</a>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-danger mt-4 position-relative top-0 start-50 translate-middle" v-on:click="showMoreArticle()">Подгрузить больше</button>
+        </div>
+
+        <!-- Анонсы -->
+
+        <div class="announcements col col-4">
+          <h2>Анонсы</h2>
+          <div class="card mt-2">
+            <div class="card-body">
+              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit totam repellat,
+                culpa sequi ea enim delectus dolor fugiat laudantium, minima vero ullam et? Explicabo, maxime in. Natus
+                unde cum repudiandae.</p>
+            </div>
+          </div>
+          <div class="card mt-4 bg-info text-white">
+            <div class="card-body">
+              <img src="img/articles-pic/android-processor.jpg" alt=""
+                class="card-img-top border border-4 border-white rounded">
+              <p class="card-text mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, aliquid? Quae
+                impedit numquam odio dolores id sint magnam incidunt voluptatibus perferendis nemo, vel eum dolorum at
+                cupiditate mollitia corporis temporibus!</p>
+              <a href="" class="btn btn-light">Читать дальше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer container shadow mb-0 rounded border border-3 border-bottom-0 border-muted mt-5">
+      <p class="mb-0 mt-3 text-center fw-bold">Все права защищены &copy;</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>
