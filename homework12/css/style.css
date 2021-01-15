@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+.car {
+    width: 30%;
+    position: relative;
+    left: 5%;
+    transition: all 2s ease;
+}
+
+@keyframes spoiler{
+    from {transform: translateY(10px) translateX(10px)}
+    to{transform: translateY(-10px) translateX(-10px)}
+}
+
+#spoiler {
+    position: relative;
+    animation: spoiler 1s infinite ease;
+    animation-direction: alternate;
+}
