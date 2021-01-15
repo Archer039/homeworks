@@ -1,0 +1,14 @@
+body {
+    color: rgb(151, 58, 24);
+    border-color: rgb(33, 139, 139);
+    -webkit-border-radius: 40px;
+    border-radius: 40px;
+}
+
+p {
+    -webkit-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+}

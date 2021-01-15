@@ -1,0 +1,6 @@
+@mixin headline($fs, $lh, $fw, $col) {
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+    color: $col;
+}

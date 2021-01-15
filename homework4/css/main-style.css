@@ -1,0 +1,28 @@
+.portfolio {
+    height: 100vh;
+    background-image: url(../img/background1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.filter {
+    backdrop-filter: brightness(0.5);
+}
+
+.projects {
+    min-height: 50vh;
+}
+
+.services {
+    min-height: 50vh;
+}
+
+
+.your-website {
+    height: 100vh;
+    background-image: url(../img/background2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}

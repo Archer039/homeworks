@@ -1,0 +1,50 @@
+
+@import "vars";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    body {
+        height: 100%;
+        font-size: 12px;
+        line-height: 16px;
+        font-family: arial, sans-serif;
+        color: #808080;
+        background: #efefef url(../images/body.png) repeat-x 0 0;
+        min-width: 950px;
+    }
+}
+
+a {
+    color: #65cbf8;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  #wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -279px;
+  }
+  
+  .shell {
+    margin: 0 auto;
+    width: 950px;
+  }
+  
+  .header {
+    background: url(../images/header.png) repeat-x 0 0;
+    height: 58px;
+    padding: 29px 0 0 0;
+  }
+  
+@import "nav";
+@import "main";

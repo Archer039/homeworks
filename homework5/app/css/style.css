@@ -1,0 +1,10 @@
+body {
+    color: rgb(151, 58, 24);
+    border-color: rgb(33, 139, 139);
+    border-radius: 40px;
+}
+
+p {
+    transition: all 2s ease;
+    border-radius: 30px;
+}
